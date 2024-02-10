@@ -1,7 +1,7 @@
 import unittest
 from functions import *
 
-class TestFunctions(unittest.TestCase):
+class TestAddressFunctions(unittest.TestCase):
 
     def test_address_redirector_normal_address(self):
         result = address_redirector("Miritiba 339")
