@@ -9,7 +9,7 @@ def address_redirector(request):
     else:
         address = bigger_address(info_list)
 
-    return address
+    return  f'{{"{address[0]}", "{address[1]}"}}'
 
 def bigger_address(info_list):
     name = number = ""
@@ -106,16 +106,3 @@ def is_foreigner_address(info_list):
 
 def has_number(word):
     return any(char.isdigit() for char in word)
-        
-    
-address = address_redirector("Calle 44 No 1991")
-
-# {“Miritiba”, “339”}
-# { “Babaçu”, “500”}
-# {“Cambuí”, “123B”}
-# {“Rio Branco”, “23”}
-# {“Quirino dos Santos”, ”23 b”}
-# {"Rue de la République", "4"}
-# {"Broadway Av", "100"}
-# {“Calle Sagasta”, “26”}
-# {“Calle 44”, “No 1991”}
