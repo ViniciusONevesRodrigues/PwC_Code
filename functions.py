@@ -24,6 +24,7 @@ def bigger_address(info_list):
     list_without_name = info_list[len(name.split()):]
     for vector in list_without_name:
         number += vector + " " 
+    number = number.strip()
     list.append(name)
     list.append(number)
 
@@ -46,6 +47,7 @@ def foreigner_address(info_list):
         number_lenght = info_list[len(number.split()):]
         for vector in number_lenght:
             name += vector + " "
+        name = name.strip()
         list.append(name)
         list.append(number) 
         return list
@@ -55,6 +57,7 @@ def foreigner_address(info_list):
         list_without_number = info_list[len(number.split()):]
         for vector in list_without_number:
             name += vector + " "
+        name = name.strip()
         list.append(name)
         list.append(number) 
         return list
@@ -63,9 +66,11 @@ def foreigner_address(info_list):
         number_list = info_list[c-1:len(info_list)]
         for vector in number_list:
             number += vector + " "
+        number = number.strip()
         list_without_number = info_list[:len(number.split())]
         for vector in list_without_number:
             name += vector + " "
+        name = name.strip()
         list.append(name)
         list.append(number) 
         return list
@@ -80,10 +85,12 @@ def foreigner_address(info_list):
         name_list = info_list[:i+1]
         for vector in name_list:
             name += vector + " "
+        name = name.strip()
         list_without_name = info_list[len(name.split()):]
         for vector in list_without_name:
             number += vector + " "
         name = name.replace(',', '')
+        number = number.strip()
         list.append(name)
         list.append(number) 
         return list
@@ -101,8 +108,7 @@ def has_number(word):
     return any(char.isdigit() for char in word)
         
     
-address = address_redirector("Miritiba 339")
-print(address)
+address = address_redirector("Calle 44 No 1991")
 
 # {“Miritiba”, “339”}
 # { “Babaçu”, “500”}
