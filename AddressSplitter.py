@@ -50,6 +50,8 @@ class MyInterface(QWidget):
         self.setLayout(layout)
         self.setWindowTitle("Desafio_Codigo")
 
+        self.setWindowIcon(QIcon('img/address.ico'))
+
     def on_button_click(self):
         address = self.entry.text()
         self.labelAddress.setText(address_redirector(address))
@@ -64,6 +66,7 @@ class MyInterface(QWidget):
 
 if __name__ == "__main__":
     app = QApplication([])
+    app.setWindowIcon(QIcon("img/address.ico"))
     interface = MyInterface()
     interface.show()
     app.exec_()
