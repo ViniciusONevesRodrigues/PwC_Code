@@ -55,7 +55,7 @@ bool: True se a palavra contiver um dígito numérico, False caso contrário.
 ## Como rodar:
 
 #### Primeira forma:
-Baixe o exe e clique no AddressSplitter.exe
+[Download da Versão 1.0.0](https://github.com/ViniciusONevesRodrigues/PwC_Code/releases/tag/v1.0.0) e clique no AddressSplitter.exe
 
 #### Segunda forma:
 Baixe os arquivos, escolha uma IDE para rodar, baixe Python, baixe a biblioteca PyQt5 com "pip install PyQt5" e rode o AddressSplitter.py
