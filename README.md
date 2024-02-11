@@ -1,63 +1,67 @@
 # PwC_Code
 
-##Tecnologias usadas:
+## Tecnologias usadas:
 linguagem: Python
+<br>
 Testes: Unittest
+<br>
 Interface: PyQt5
+<br>
 Convertor para .exe: auto-py-to-exe
 
-##Funções Principais
+## Funções Principais
 
-###address_redirector(request)
+### address_redirector(request)
 Esta função principal redireciona a string de requisição para funções específicas com base no tipo de endereço. Retorna uma string formatada com o nome e o número separados.
 
-#####Parâmetros:
+##### Parâmetros:
 request (str): Uma string contendo informações de endereço.
-#####Retorno:
+##### Retorno:
 str: Uma string formatada com o nome e o número separados, encapsulados por chaves.
 
-##Funções Auxiliares
-###bigger_address(info_list)
+## Funções Auxiliares
+### bigger_address(info_list)
 Extrai o nome e o número de um endereço mais complexo.
 
-#####Parâmetros:
+##### Parâmetros:
 info_list (list): Uma lista de palavras representando as informações de endereço.
-#####Retorno:
+##### Retorno:
 list: Uma lista contendo o nome e o número separados.
 
-###foreigner_address(info_list)
+### foreigner_address(info_list)
 Extrai o nome e o número de um endereço estrangeiro.
 
-#####Parâmetros:
+##### Parâmetros:
 info_list (list): Uma lista de palavras representando as informações de endereço.
-#####Retorno:
+##### Retorno:
 list: Uma lista contendo o nome e o número separados.
 
-###is_foreigner_address(info_list)
+### is_foreigner_address(info_list)
 Verifica se o endereço é estrangeiro com base em determinados critérios.
 
-#####Parâmetros:
+##### Parâmetros:
 info_list (list): Uma lista de palavras representando as informações de endereço.
-#####Retorno:
+##### Retorno:
 bool: True se o endereço for considerado estrangeiro, False caso contrário.
 
-###has_number(word)
+### has_number(word)
 Verifica se uma palavra contém um dígito numérico.
 
-#####Parâmetros:
+##### Parâmetros:
 word (str): Uma string representando uma palavra.
-#####Retorno:
+##### Retorno:
 bool: True se a palavra contiver um dígito numérico, False caso contrário.
 
-##Como rodar:
+## Como rodar:
 
-####Primeira forma:
+#### Primeira forma:
 Baixe o exe e clique no AddressSplitter.exe
 
-####Segunda forma:
+#### Segunda forma:
 Baixe os arquivos, escolha uma IDE para rodar, baixe Python, baixe a biblioteca PyQt5 com "pip install PyQt5" e rode o AddressSplitter.py
 
 
-##Resultado
+## Resultado
 
 ![Resultado](img/rodando.jpg)
+
